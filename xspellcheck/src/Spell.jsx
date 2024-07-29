@@ -36,7 +36,7 @@ function Spell() {
     <div className='container'>
         <h1>Spell Check and Auto-Correction</h1>
         <textarea placeholder='Enter text...' rows={5} cols={60} onChange={handleChange} value={spell}></textarea>
-        {correctSpell&& <p>Did you mean: {correctSpell}?</p>}
+        {correctSpell&& <p>Did you mean: <strong> {correctSpell}</strong>?</p>}
     </div>
   )
 }
